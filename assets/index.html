@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>St Nicholas Homeless Service | East London</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=GBP&intent=capture"></script>
+
+<style>
+:root{--wine:#5d0f2d;--dark:#350719;--ruby:#8b173e;--gold:#d9ae58;--lightgold:#f0cf83;--paper:#fbf5e8;--white:#fffdf8;--muted:#715b61}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:#2b1820;font-family:Inter,Arial,sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+.kicker{font:600 .72rem Cinzel,serif;letter-spacing:.19em;text-transform:uppercase;color:var(--lightgold)}.dark{color:var(--ruby)}
+header{position:absolute;width:100%;z-index:5;color:#fff;background:linear-gradient(90deg,rgba(53,7,25,.96),rgba(93,15,45,.75));border-bottom:1px solid rgba(240,207,131,.3)}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font:700 .8rem/1.15 Cinzel,serif}.brand>img{width:53px;height:53px;border-radius:50%;object-fit:cover;border:2px solid var(--lightgold)}.links{display:flex;align-items:center;gap:26px;font-weight:700;font-size:.84rem}.links a:hover{color:var(--lightgold)}
+.btn{border:1px solid transparent;padding:14px 20px;font:700 .76rem Cinzel,serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.gold{background:var(--gold);color:var(--dark)}.outline{border-color:rgba(255,255,255,.7);background:transparent;color:#fff}
+.hero{min-height:620px;display:flex;align-items:end;color:#fff;overflow:hidden;position:relative;background:linear-gradient(90deg,rgba(53,7,25,.95),rgba(53,7,25,.75) 47%,rgba(53,7,25,.3)),url("assets/outreach-7.jpeg") center/cover}.hero:before{content:"__codex_directive_quoted_backslash__2626  __codex_directive_quoted_backslash__2723  __codex_directive_quoted_backslash__2626  __codex_directive_quoted_backslash__2723  __codex_directive_quoted_backslash__2626";position:absolute;top:104px;width:100%;text-align:center;letter-spacing:2em;color:rgba(240,207,131,.35)}.hero-content{position:relative;max-width:760px;padding:142px 0 70px}h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif}h1{font-size:clamp(3.4rem,6vw,5.7rem);line-height:.88;letter-spacing:-.05em;margin:18px 0 25px}.hero p{max-width:590px;font:1.4rem/1.3 "Cormorant Garamond",serif;color:#fff5e2}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.verse{padding:48px 20px;text-align:center;color:#fff8e8;background:var(--wine)}.verse q{font:600 clamp(1.45rem,3vw,2.25rem)/1.2 "Cormorant Garamond",serif}.verse cite{display:block;margin-top:12px;color:var(--lightgold);font:600 .7rem Cinzel,serif;letter-spacing:.13em}
+section{padding:100px 0}h2{color:var(--dark);font-size:clamp(2.7rem,5vw,4.5rem);line-height:.92;letter-spacing:-.04em;margin:12px 0 20px}.copy{color:var(--muted)}
+.mission{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}.mission img{width:100%;height:480px;object-fit:cover;box-shadow:18px 18px 0 var(--lightgold)}.quote{border-left:3px solid var(--gold);padding-left:18px;color:var(--wine);font:600 1.25rem/1.3 "Cormorant Garamond",serif}
+.services{background:#f3e8d2;border-block:1px solid #d9c39b}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}.card{padding:28px;background:var(--white);border-top:4px solid var(--gold);box-shadow:0 12px 28px rgba(72,27,38,.08);transition:.25s}.card:hover{transform:translateY(-7px)}.mark{font-size:1.55rem;color:var(--wine)}h3{font-size:1.75rem;line-height:1;margin:10px 0;color:var(--wine)}.card p{margin:0;color:var(--muted);font-size:.9rem}
+.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:25px}.gallery-head p{max-width:300px;color:var(--muted)}.gallery{display:grid;grid-template-columns:1.3fr .86fr .86fr;grid-auto-rows:210px;gap:15px;margin-top:35px}.gallery figure{margin:0;position:relative;overflow:hidden;background:var(--wine)}.gallery figure:first-child{grid-row:span 2}.gallery img{width:100%;height:100%;object-fit:cover;transition:.5s}.gallery figure:hover img{transform:scale(1.05)}figcaption{position:absolute;bottom:0;width:100%;padding:30px 14px 12px;color:#fff;background:linear-gradient(transparent,rgba(53,7,25,.85));font:600 .68rem Cinzel,serif;letter-spacing:.08em;text-transform:uppercase}
+.donate{padding:0;color:#fff;background:linear-gradient(115deg,var(--dark),var(--ruby))}.donate-inner{min-height:390px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center}.donate h2{color:#fff7e6}.donate p{max-width:550px;color:#f0ded0}.cross-art{justify-self:end;width:240px;height:240px;display:grid;place-items:center;border:1px solid var(--lightgold);transform:rotate(45deg);color:var(--lightgold);font-size:6rem}.cross-art span{transform:rotate(-45deg)}
+footer{padding:48px 0 24px;background:#280411;color:#e8d6bf}.footer-grid{display:grid;grid-template-columns:1.35fr .8fr .8fr;gap:35px}.footer-logos{display:flex;align-items:center;gap:10px}.church-logo{width:59px;height:59px;border-radius:50%;object-fit:cover;border:2px solid var(--lightgold)}.diocese-logo{width:54px;height:62px;object-fit:contain;mix-blend-mode:multiply}footer h4{margin:0 0 10px;color:var(--lightgold);font:600 .72rem Cinzel,serif;letter-spacing:.12em;text-transform:uppercase}footer a,footer p{display:block;margin:0 0 7px;font-size:.87rem}.small{margin-top:30px;padding-top:18px;border-top:1px solid rgba(240,207,131,.25);font-size:.74rem;color:#bfa894}
+dialog{width:min(470px,calc(100% - 28px));padding:0;border:0;background:var(--white)}dialog::backdrop{background:rgba(33,0,12,.8)}.modal{padding:32px;position:relative}.close{position:absolute;right:14px;top:8px;border:0;background:transparent;font-size:1.8rem;cursor:pointer;color:var(--wine)}.amounts{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:18px 0}.amount{padding:12px;background:#fff9ee;border:1px solid #d9c39b;color:var(--wine);font-weight:700;cursor:pointer}.amount.active{background:var(--lightgold)}label{display:block;font-size:.85rem;font-weight:700;margin:10px 0 5px}.amount-input{width:100%;padding:12px;border:1px solid #d9c39b;font-size:1rem}#paypal-button-container{margin-top:20px}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:760px){.links{display:none}nav{height:75px}.hero{min-height:540px}.hero-content{padding:135px 0 58px}.mission,.cards,.footer-grid,.donate-inner{grid-template-columns:1fr}.mission{gap:36px}.mission img{height:390px}.gallery-head{display:block}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:160px}.gallery figure:first-child{grid-column:span 2;grid-row:span 2}.cross-art{display:none}.donate-inner{padding:62px 0}section{padding:70px 0}}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#top"><img src="assets/church-logo.jpeg" alt="Church logo"><span>St Nicholas<br>Homeless Service</span></a>
+      <div class="links"><a href="#mission">Our mission</a><a href="#work">Our service</a><a href="#gallery">Gallery</a><a class="btn gold" href="#donate">Donate</a></div>
+      <a class="btn gold" href="#donate">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="kicker">St Mary &amp; St George Coptic Orthodox Church &middot; East London</span>
+      <h1>Faith in action.<br>Love in service.</h1>
+      <p>St Nicholas Homeless Service brings warm food, essential supplies and the compassionate presence of Christ to our neighbours in East London.</p>
+      <div class="actions"><button class="btn gold" data-donate>Donate with PayPal &rarr;</button><a class="btn outline" href="#mission">Our mission</a></div>
+    </div>
+  </section>
+
+  <section class="verse">
+    <q>Blessed is he who considers the poor; the Lord will deliver him in time of trouble.</q>
+    <cite>Psalm 41:1</cite>
+  </section>
+
+  <section id="mission">
+    <div class="container mission reveal">
+      <img src="assets/outreach-7.jpeg" alt="Food prepared for the service">
+      <div>
+        <span class="kicker dark">Our mission</span>
+        <h2>To serve every person with dignity and mercy.</h2>
+        <p class="copy">We demonstrate Christ&rsquo;s love through practical action and compassionate outreach, offering hope, support and encouragement to people experiencing homelessness.</p>
+        <p class="copy">Our service meets immediate needs with genuine care, creating a welcoming community where every person is treated with respect.</p>
+        <p class="quote">&ldquo;The giver of every good and perfect gift has called upon us to mimic God&rsquo;s giving, by grace, through faith.&rdquo;<br><small>St Nicholas, Bishop of Myra</small></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="work">
+    <div class="container">
+      <div class="reveal">
+        <span class="kicker dark">What we do</span>
+        <h2>Practical care, offered with love.</h2>
+        <p class="copy">From hot drinks to food parcels, every act of service is an expression of Christian compassion.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal"><div class="mark">&#9766;</div><h3>Weekly outreach</h3><p>Warm food, drinks and a welcoming presence for people who need support.</p></article>
+        <article class="card reveal"><div class="mark">&#10083;</div><h3>Essential supplies</h3><p>Food, hygiene products, clothing and other practical essentials, shared with care.</p></article>
+        <article class="card reveal"><div class="mark">&#9766;</div><h3>Lasting hope</h3><p>Relationships rooted in dignity, respect and hope for a more secure future.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <div class="gallery-head reveal">
+        <div><span class="kicker dark">In our community</span><h2>Serving with a joyful heart.</h2></div>
+        <p>Our volunteers prepare, share and serve &mdash; bringing light to our neighbours in practical ways.</p>
+      </div>
+      <div class="gallery">
+        <figure class="reveal"><img src="assets/outreach-11.jpeg" alt="Volunteer team"><figcaption>Our volunteer team</figcaption></figure>
+        <figure class="reveal"><img src="assets/outreach-10.jpeg" alt="Volunteers"><figcaption>Serving together</figcaption></figure>
+        <figure class="reveal"><img src="assets/outreach-6.jpeg" alt="Outreach"><figcaption>East London outreach</figcaption></figure>
+        <figure class="reveal"><img src="assets/outreach-4.jpeg" alt="Drinks and supplies"><figcaption>Warm drinks &amp; supplies</figcaption></figure>
+        <figure class="reveal"><img src="assets/outreach-9.jpeg" alt="Meal"><figcaption>Meals prepared with love</figcaption></figure>
+        <figure class="reveal"><img src="assets/outreach-8.jpeg" alt="Community service"><figcaption>Care in action</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="donate" id="donate">
+    <div class="container donate-inner">
+      <div class="reveal">
+        <span class="kicker">Support the ministry</span>
+        <h2>Give hope today.</h2>
+        <p>Your gift helps provide food, warm drinks and essential items for people experiencing homelessness in East London.</p>
+        <button class="btn gold" data-donate>Donate with PayPal &rarr;</button>
+      </div>
+      <div class="cross-art"><span>&#9766;</span></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="footer-logos">
+            <img class="church-logo" src="assets/church-logo.jpeg" alt="St Mary and St George Church logo">
+            <img class="diocese-logo" src="assets/diocese-of-london-logo.jpeg" alt="Coptic Orthodox Diocese of London logo">
+          </span>
+          <span>St Nicholas<br>Homeless Service</span>
+        </a>
+        <p style="margin-top:14px">St Mary &amp; St George Coptic Orthodox Church<br>East London</p>
+      </div>
+      <div><h4>Explore</h4><a href="#mission">Our mission</a><a href="#work">Our service</a><a href="#gallery">Gallery</a></div>
+      <div><h4>Support</h4><a href="#donate">Donate with PayPal</a><p>With the blessing of Fr. Micheal</p></div>
+    </div>
+    <div class="small">&copy; <span id="year"></span> St Nicholas Homeless Service. Serving with Christ&rsquo;s love.</div>
+  </div>
+</footer>
+
+<dialog id="donateDialog">
+  <div class="modal">
+    <button class="close" data-close>&times;</button>
+    <span class="kicker dark">Secure donation</span>
+    <h3>Give with PayPal</h3>
+    <p>Choose an amount to support St Nicholas Homeless Service.</p>
+    <div class="amounts">
+      <button class="amount" data-amount="10">&pound;10</button>
+      <button class="amount active" data-amount="25">&pound;25</button>
+      <button class="amount" data-amount="50">&pound;50</button>
+    </div>
+    <label for="amount">Or enter another amount (&pound;)</label>
+    <input class="amount-input" id="amount" type="number" min="1" value="25">
+    <div id="paypal-button-container"></div>
+  </div>
+</dialog>
+
+<script>
+const dialog=document.getElementById("donateDialog"),amount=document.getElementById("amount");
+document.querySelectorAll("[data-donate]").forEach(b=>b.onclick=()=>{dialog.showModal();paypalButton()});
+document.querySelector("[data-close]").onclick=()=>dialog.close();
+document.querySelectorAll("[data-amount]").forEach(b=>b.onclick=()=>{amount.value=b.dataset.amount;document.querySelectorAll(".amount").forEach(x=>x.classList.toggle("active",x===b))});
+let rendered=false;
+function paypalButton(){
+  if(rendered||!window.paypal)return;
+  rendered=true;
+  paypal.Buttons({
+    createOrder:(d,a)=>{
+      const gift=parseFloat(amount.value);
+      if(!gift||gift<1){alert("Please enter at least £1.");return}
+      return a.order.create({purchase_units:[{description:"Donation to St Nicholas Homeless Service",amount:{currency_code:"GBP",value:gift.toFixed(2)}}]})
+    },
+    onApprove:(d,a)=>a.order.capture().then(x=>{alert("Thank you, "+x.payer.name.given_name+"!");dialog.close()}),
+    onError:()=>alert("Please check the PayPal details and try again.")
+  }).render("#paypal-button-container")
+}
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(x=>observer.observe(x));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
